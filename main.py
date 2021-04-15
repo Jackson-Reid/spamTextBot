@@ -8,8 +8,8 @@ import pyautogui
 import time
 
 time.sleep(3)  # This gives you time to swap to the messaging application
-f = open("script.txt", 'r')  # Opens the script file
+f = open("script2.txt", 'r', encoding="utf8")  # Opens the script file
 for word in f:
     pyautogui.typewrite(word)  # Prints one line of the file
     pyautogui.press("enter")  # Sends the message
-    time.sleep(0.5)
+    time.sleep(1)
